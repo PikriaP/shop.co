@@ -7,9 +7,7 @@
 $textcolor: red;   
 $blackColor: #000000;
 $fontColor: #FFFFFF;
-body {
-    max-width: 1440px;
-}
+
 .logo {
     font-family: "Integral CF", "sans-serif";
     font-weight: bolder;
@@ -18,16 +16,30 @@ body {
     font-size: 32px;
 }
 .nav {
-max-width: 1240px;
+max-width: 90%;
 height: 48px;
 margin: 0 auto;
+margin-top: 24px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.nav-ul{
+    width: 1000px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+
+}
+.nav-li{
+    align-items: center;
 }
 .deal-div{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 100wv;
     height: 38px; 
     background-color: $blackColor;
     color: $fontColor;
@@ -45,4 +57,33 @@ margin: 0 auto;
     height: 20px;
     color: $fontColor;
     margin-left: 425px;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 48px;
+    border-radius: 50px;
+    float: left;
+    background-color: #f1f1f1; /* Background color for the search container */
+    padding: 8px;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.bi-search {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 20px;
+}
+.icons {
+    display: flex;
 }
