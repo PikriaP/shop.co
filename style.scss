@@ -1,89 +1,145 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi');
-@import url(https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular);             
+@import url(https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular);
+
 @font-face {
-    font-family: 'Integral CF'; /* Name your font family */
-    src: url('./fonts/Fontspring-DEMO-integralcf-bold.otf'); /* Locate the .ttf file within your directory*/
-  }
-$textcolor: red;   
+    font-family: 'Integral CF';
+    src: url('./fonts/Fontspring-DEMO-integralcf-bold.otf');
+}
+
+$textcolor: red;
 $blackColor: #000000;
 $fontColor: #FFFFFF;
 
-.logo {
-    font-family: "Integral CF", "sans-serif";
-    font-weight: bolder;
-    color: $blackColor;
-    line-height: 38.4px;
-    font-size: 32px;
+body {
+    font-family: 'Satoshi', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
 }
-.nav {
-max-width: 90%;
-height: 48px;
-margin: 0 auto;
-margin-top: 24px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-.nav-ul{
-    width: 1000px;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
 
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.nav-li{
-    align-items: center;
-}
-.deal-div{
+
+.deal-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    max-width: 100wv;
-    height: 38px; 
+    max-width: 100vw;
+    height: 38px;
     background-color: $blackColor;
     color: $fontColor;
-    font-family: 'Satoshi', sans-serif;
-    font-Weight: 400;
-    font-Size: 14px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 18.9px;
-                                                
-}
-.deal-div span{
-    text-decoration-line: underline;
-}
-.deal-div i {
-    width: 20px;
-    height: 20px;
-    color: $fontColor;
-    margin-left: 425px;
+    margin: 0 auto;
+
+    span {
+        text-decoration-line: underline;
+        cursor: pointer;
+    }
+
+    i {
+        margin-left: auto;
+        margin-right: 10px;
+        cursor: pointer;
+    }
 }
 
+.nav {
+    max-width: 90%;
+    height: 48px;
+    margin: 24px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 24px;
+
+    .logo {
+        font-family: "Integral CF", sans-serif;
+        font-weight: bolder;
+        color: $blackColor;
+        line-height: 38.4px;
+        font-size: 32px;
+    }
+
+    .nav-ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 1000px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav-li {
+        align-items: center;
+        
+        a {
+            text-decoration: none;
+            color: $blackColor;
+            font-size: 16px;
+            &:hover {
+                color: #ff6600; /* Add hover color change */
+            }
+        }
+
+        span {
+            margin-left: 5px;
+        }
+    }
+}
 
 .search-container {
     display: flex;
     align-items: center;
     width: 40%;
     height: 48px;
-    border-radius: 50px;
-    float: left;
-    background-color: #f1f1f1; /* Background color for the search container */
-    padding: 8px;
-}
-
-.search-wrapper {
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    padding: 0 15px;
+    margin-left: auto; /* Aligns to the right side next to nav */
     position: relative;
-    width: 100%;
+
+    .bi-search {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #888;
+        font-size: 20px;
+    }
+
+    .search {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        padding-left: 40px; /* Padding for the icon */
+        font-size: 16px;
+        color: #333;
+        outline: none;
+
+        &::placeholder {
+            color: #888;
+        }
+    }
 }
 
-.bi-search {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #888;
-    font-size: 20px;
-}
 .icons {
     display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+    i {
+        font-size: 24px;
+        color: $blackColor;
+        margin-right: 10px;
+        cursor: pointer;
+
+        &:hover {
+            color: #ff6600;
+        }
+    }
 }
