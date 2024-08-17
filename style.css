@@ -131,6 +131,30 @@ header {
 
 .main-div {
   background-image: url(./photoes/Rectangle\ 2.png);
-  height: 663px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 883px;
   padding-top: 134px;
+}
+
+.container {
+  width: 850px;
+  height: 700px;
+  padding-left: 100px;
+}
+
+h1 {
+  font-family: "Integral CF", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 64px;
+  font-size: 64px;
+}
+
+p {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  line-height: 16px;
+  font-size: 22px;
 }/*# sourceMappingURL=style.css.map */

@@ -147,7 +147,34 @@ header {
 
 .main-div {
     background-image: url(./photoes/Rectangle\ 2.png);
-    height: 663px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 883px;
     padding-top: 134px;
 
+}
+.container{
+    display: flex;
+    // justify-content: left;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 850px;
+    height: 700px;
+    padding-left: 100px;
+}
+h1{
+    font-family: "Integral CF", sans-serif;
+        font-weight: 700;
+        color: $blackColor;
+        line-height: 64px;
+        font-size: 64px;
+    
+}
+p{
+    padding-top: ;
+    font-family: "Satoshi", sans-serif;
+        font-weight: 400;
+        color: $blackColor;
+        line-height: 16px;
+        font-size: 22px;
 }
