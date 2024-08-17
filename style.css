@@ -34,7 +34,7 @@ header {
   cursor: pointer;
 }
 .deal-div i {
-  margin-left: auto;
+  margin-left: 425px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -127,4 +127,10 @@ header {
 }
 .icons i:hover {
   color: #ff6600;
+}
+
+.main-div {
+  background-image: url(./photoes/Rectangle\ 2.png);
+  height: 663px;
+  padding-top: 134px;
 }/*# sourceMappingURL=style.css.map */

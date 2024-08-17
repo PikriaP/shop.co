@@ -6,7 +6,7 @@
     src: url('./fonts/Fontspring-DEMO-integralcf-bold.otf');
 }
 
-$textcolor: red;
+
 $blackColor: #000000;
 $fontColor: #FFFFFF;
 
@@ -41,7 +41,7 @@ header {
     }
 
     i {
-        margin-left: auto;
+        margin-left: 425px;
         margin-right: 10px;
         cursor: pointer;
     }
@@ -142,4 +142,12 @@ header {
             color: #ff6600;
         }
     }
+}
+
+
+.main-div {
+    background-image: url(./photoes/Rectangle\ 2.png);
+    height: 663px;
+    padding-top: 134px;
+
 }
