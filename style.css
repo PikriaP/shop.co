@@ -260,15 +260,90 @@ h1 {
   margin-top: 68px;
 }
 .main-div2 .shop {
-  max-width: 1200px;
-  height: 400px;
+  max-width: 100%;
+  height: 500px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  padding: 51px;
 }
-.main-div2 .img {
+.main-div2 .clothes {
+  max-width: 1300px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 51px;
+}
+.main-div2 .image-container {
   width: 295px;
   height: 298px;
   border-radius: 20px;
   background-image: url(./photoes/image1.png);
+  background-size: cover;
+  background-position: center;
+}
+.main-div2 .stars {
+  width: 150px;
+  height: 19px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #FFC633;
+}
+.main-div2 .texts {
+  display: flex;
+  height: 150px;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 27px;
+  font-size: 20px;
+}
+.main-div2 .stars span {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400 !important;
+  color: #000000;
+  line-height: 18.9px !important;
+  font-size: 14px !important;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  /* Hide old price and discount by default */
+}
+.pricing .current-price {
+  font-family: "Satoshi", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.4px;
+  text-align: left;
+  margin-right: 10px;
+}
+.pricing .old-price {
+  font-family: "Satoshi", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.4px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+.pricing .discount {
+  background: rgba(255, 51, 51, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #FF3333;
+  font-family: "Satoshi", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.pricing .no-discount .old-price,
+.pricing .no-discount .discount {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

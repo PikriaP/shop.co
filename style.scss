@@ -9,6 +9,8 @@
 
 $blackColor: #000000;
 $fontColor: #FFFFFF;
+$starscolor:#FFC633;
+
 
 body {
     font-family: 'Satoshi', sans-serif;
@@ -269,6 +271,7 @@ padding-bottom: 43px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     h2 {
       font-family: "Alfa Slab One", serif;
       font-weight: 400;
@@ -276,21 +279,108 @@ padding-bottom: 43px;
       font-size: 48px;
       line-height: 65.71px;
       margin-top: 68px;
-      
     }
 
-    .shop{
-      max-width: 1200px; 
-      height: 400px;
+    .shop {
+      max-width: 100%; 
+      height: 500px;
       display: flex;
       justify-content: space-between;
       flex-direction: row;
+      padding: 51px;
     }
-    .img{
+
+    .clothes {
+      max-width: 1300px; 
+      height: 400px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 51px;
+    }
+
+    .image-container {
+        
         width: 295px;
         height: 298px;
         border-radius: 20px;
         background-image: url(./photoes/image1.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .stars {
+        width: 150px;
+        height: 19px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        // padding-left: 1px;
+        color: $starscolor;
+    }
+    .texts {
+        display: flex;
+        height: 150px;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: "Satoshi", sans-serif;
+        font-weight: 700;
+        color: $blackColor;
+        line-height: 27px;
+        font-size: 20px;
+    }
+    .stars span{
+        font-family: "Satoshi", sans-serif;
+        font-weight: 400 !important;
+        color: $blackColor;
+        line-height: 18.9px !important;
+        font-size: 14px !important;
+    }
+}
+.pricing {
+    display: flex;
+    align-items: center;
+  
+    .current-price {
+      font-family: 'Satoshi', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32.4px;
+      text-align: left;
+      margin-right: 10px;
+    }
+  
+    .old-price {
+      font-family: 'Satoshi', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32.4px;
+      text-align: left;
+      color: rgba(0, 0, 0, 0.4);
+      text-decoration: line-through;
+      margin-right: 10px;
+    }
+  
+    .discount {
+      background: rgba(255, 51, 51, 0.1);
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #FF3333;
+      font-family: 'Satoshi', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+    }
+  
+    /* Hide old price and discount by default */
+    .no-discount {
+      .old-price,
+      .discount {
+        display: none;
+      }
     }
   }
-
+  .img1 {
+    ba
+  }
+  
