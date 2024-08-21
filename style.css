@@ -245,12 +245,13 @@ h1 {
 
 .main-div2 {
   max-width: 100%;
-  height: 500px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 68px;
+  margin-bottom: 64px;
 }
 .main-div2 h2 {
   font-family: "Alfa Slab One", serif;
@@ -258,6 +259,7 @@ h1 {
   font-style: normal;
   font-size: 48px;
   line-height: 65.71px;
+  padding-top: 68px;
   margin-bottom: 51px;
 }
 .main-div2 .shop {
@@ -266,6 +268,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  padding-bottom: 36px;
 }
 .main-div2 .clothes {
   width: 80%;
@@ -364,4 +367,84 @@ h1 {
 
 .img3 {
   background-image: url(./photoes/image4.png);
+}
+
+.btn {
+  width: 218px;
+  height: 52px;
+  border-radius: 62px;
+  border: 1px;
+  color: #000000;
+  opacity: 90%;
+  gap: 12px;
+  padding: 16px 54px 16px 54px;
+  margin-bottom: 64px;
+}
+
+.img11 {
+  background-image: url(./photoes/image11.png);
+}
+
+.img22 {
+  background-image: url(./photoes/image22.png);
+}
+
+.img33 {
+  background-image: url(./photoes/image33.png);
+}
+
+.img44 {
+  background-image: url(./photoes/image44.png);
+}
+
+.texts p {
+  text-transform: lowercase;
+}
+
+.texts p:first-letter {
+  text-transform: uppercase;
+}
+
+.grid-container {
+  width: 1239px;
+  height: 866px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 407px 684px;
+  grid-template-rows: 289px 289px;
+  grid-gap: 20px;
+  background-color: #F0F0F0;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.box {
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  gap: 20px;
+}
+
+.box1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-image: url("./photoes/grid1.png");
+}
+
+.box2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-image: url("./photoes/grid2.png");
+}
+
+.box3 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-image: url("./photoes/grid3.png");
+}
+
+.box4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-image: url("./photoes/grid4.png");
 }/*# sourceMappingURL=style.css.map */
