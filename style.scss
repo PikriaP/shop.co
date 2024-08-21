@@ -10,6 +10,7 @@
 $blackColor: #000000;
 $fontColor: #FFFFFF;
 $starscolor:#FFC633;
+$redColor: #FF3333;
 
 
 body {
@@ -84,7 +85,7 @@ header {
             color: $blackColor;
             font-size: 16px;
             &:hover {
-                color: #ff6600; /* Add hover color change */
+                color: $redColor;
             }
         }
 
@@ -100,7 +101,7 @@ header {
     width: 40%;
     height: 48px;
     border-radius: 25px;
-    background-color: #f1f1f1;
+    background-color: $fontColor;
     padding: 0 15px;
     margin-left: auto; /* Aligns to the right side next to nav */
     position: relative;
@@ -141,7 +142,7 @@ header {
         cursor: pointer;
 
         &:hover {
-            color: #ff6600;
+            color: $redColor;
         }
     }
 }
@@ -257,8 +258,8 @@ h1{
    align-items: center;
   
    &.img {
-padding-top: 43px;
-padding-bottom: 43px;
+padding-top: 2px;
+padding-bottom: 2px;
    }
 
 }
@@ -266,37 +267,39 @@ padding-bottom: 43px;
 
 .main-div2 {
     max-width: 100%;
-    height: 700px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    margin-top: 68px;
     h2 {
       font-family: "Alfa Slab One", serif;
       font-weight: 400;
       font-style: normal;
       font-size: 48px;
       line-height: 65.71px;
-      margin-top: 68px;
+      margin-bottom: 51px;
+    
     }
 
     .shop {
-      max-width: 100%; 
-      height: 500px;
+      width: 80%; 
+      height: 520px;
       display: flex;
       justify-content: space-between;
       flex-direction: row;
-      padding: 51px;
+    //   padding: 10px;
     }
 
     .clothes {
-      max-width: 1300px; 
+      width: 80%; 
       height: 400px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      align-items: center;
       flex-direction: column;
-      padding: 51px;
+    //   padding: 20px;
     }
 
     .image-container {
@@ -304,9 +307,10 @@ padding-bottom: 43px;
         width: 295px;
         height: 298px;
         border-radius: 20px;
-        background-image: url(./photoes/image1.png);
         background-size: cover;
         background-position: center;
+        // margin: -50px;
+        // margin-left: 1px;
     }
 
     .stars {
@@ -315,12 +319,11 @@ padding-bottom: 43px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        // padding-left: 1px;
         color: $starscolor;
     }
     .texts {
         display: flex;
-        height: 150px;
+        height: 90px;
         flex-direction: column;
         justify-content: space-between;
         font-family: "Satoshi", sans-serif;
@@ -356,7 +359,8 @@ padding-bottom: 43px;
       font-weight: 700;
       line-height: 32.4px;
       text-align: left;
-      color: rgba(0, 0, 0, 0.4);
+      color: $blackColor;
+      opacity: 40%;
       text-decoration: line-through;
       margin-right: 10px;
     }
@@ -367,9 +371,11 @@ padding-bottom: 43px;
       border-radius: 5px;
       color: #FF3333;
       font-family: 'Satoshi', sans-serif;
-      font-size: 24px;
-      font-weight: 700;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16.2px;
       text-align: center;
+      opacity: 90%;
     }
   
     /* Hide old price and discount by default */
@@ -380,7 +386,19 @@ padding-bottom: 43px;
       }
     }
   }
-  .img1 {
-    ba
+  .img {
+    background-image: url(./photoes/image1.png);
   }
+  .img1 {
+
+    background-image: url(./photoes/image2.png);
+  }
+  .img2 {
+    background-image: url(./photoes/image3.png);
+  }
+  .img3 {
+    background-image: url(./photoes/image4.png);
+  }
+  
+
   
