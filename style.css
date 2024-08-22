@@ -24,7 +24,7 @@ header {
   max-width: 100vw;
   height: 38px;
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 400;
   font-size: 14px;
   line-height: 18.9px;
@@ -74,7 +74,7 @@ header {
   font-size: 16px;
 }
 .nav .nav-li a:hover {
-  color: #FF3333;
+  color: #ff3333;
 }
 .nav .nav-li span {
   margin-left: 5px;
@@ -86,7 +86,7 @@ header {
   width: 40%;
   height: 48px;
   border-radius: 25px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 0 15px;
   margin-left: auto; /* Aligns to the right side next to nav */
   position: relative;
@@ -127,7 +127,7 @@ header {
   cursor: pointer;
 }
 .icons i:hover {
-  color: #FF3333;
+  color: #ff3333;
 }
 
 .main-div {
@@ -170,7 +170,7 @@ h1 {
   height: 52px;
   background-color: #000000;
   border-radius: 62px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .numbers1 {
@@ -291,7 +291,7 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: #FFC633;
+  color: #ffc633;
 }
 .main-div2 .texts {
   display: flex;
@@ -340,7 +340,7 @@ h1 {
   background: rgba(255, 51, 51, 0.1);
   padding: 5px 10px;
   border-radius: 5px;
-  color: #FF3333;
+  color: #ff3333;
   font-family: "Satoshi", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -410,12 +410,15 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 289px);
   gap: 20px;
-  max-width: 1239px;
+  width: 95%;
   margin: 0 auto;
   padding: 20px;
 }
-.grid-container .box1, .grid-container .box2, .grid-container .box3, .grid-container .box4 {
-  background-color: #F0F0F0;
+.grid-container .box1,
+.grid-container .box2,
+.grid-container .box3,
+.grid-container .box4 {
+  background-color: #f0f0f0;
   border-radius: 20px;
   background-size: cover;
   background-position: center;
@@ -441,14 +444,34 @@ h1 {
   background-image: url("./photoes/grid4.png");
 }
 
-.box h4 {
+h4 {
   font-family: "Satoshi", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 48.6px;
-  text-align: inherit;
-  justify-content: left;
+  margin: 0;
+  place-items: start;
   color: #000000;
-  padding-left: 25px;
-  padding-top: 36px;
+  margin-left: 25px;
+  margin-top: 36px !important;
+}
+
+.grid-div {
+  display: flex;
+  flex-direction: column;
+  max-width: 1239px;
+  height: 866px;
+  border-radius: 40px;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+}
+.grid-div h2 {
+  font-family: "integral cf", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0 auto;
+  font-size: 48px;
+  line-height: 57.6px;
+  padding-top: 70px;
+  padding-bottom: 64px;
 }/*# sourceMappingURL=style.css.map */

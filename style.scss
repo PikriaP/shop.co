@@ -1,500 +1,507 @@
-@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url("https://fonts.cdnfonts.com/css/satoshi");
 @import url(https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular);
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap");
 @font-face {
-    font-family: 'Integral CF';
-    src: url('./fonts/Fontspring-DEMO-integralcf-bold.otf');
+  font-family: "Integral CF";
+  src: url("./fonts/Fontspring-DEMO-integralcf-bold.otf");
 }
 
-
 $blackColor: #000000;
-$fontColor: #FFFFFF;
-$starscolor:#FFC633;
-$redColor: #FF3333;
+$fontColor: #ffffff;
+$starscolor: #ffc633;
+$redColor: #ff3333;
+$boxcolor: #F0F0F0;
 
 
 body {
-    font-family: 'Satoshi', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
 }
 
 header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .deal-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100vw;
-    height: 38px;
-    background-color: $blackColor;
-    color: $fontColor;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18.9px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  height: 38px;
+  background-color: $blackColor;
+  color: $fontColor;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.9px;
+  margin: 0 auto;
 
-    span {
-        text-decoration-line: underline;
-        cursor: pointer;
-    }
+  span {
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
 
-    i {
-        margin-left: 425px;
-        margin-right: 10px;
-        cursor: pointer;
-    }
+  i {
+    margin-left: 425px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
 }
 
 .nav {
-    max-width: 90%;
-    height: 48px;
-    margin: 24px auto 0 auto;
+  max-width: 90%;
+  height: 48px;
+  margin: 24px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+
+  .logo {
+    font-family: "Integral CF", sans-serif;
+    font-weight: bolder;
+    color: $blackColor !important;
+    line-height: 38.4px;
+    font-size: 32px;
+  }
+
+  .nav-ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-bottom: 24px;
+    justify-content: space-evenly;
+    width: 1000px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-    .logo {
-        font-family: "Integral CF", sans-serif;
-        font-weight: bolder;
-        color: $blackColor !important;
-        line-height: 38.4px;
-        font-size: 32px;
+  .nav-li {
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: $blackColor;
+      font-size: 16px;
+      &:hover {
+        color: $redColor;
+      }
     }
 
-    .nav-ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 1000px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
+    span {
+      margin-left: 5px;
     }
-
-    .nav-li {
-        align-items: center;
-        
-        a {
-            text-decoration: none;
-            color: $blackColor;
-            font-size: 16px;
-            &:hover {
-                color: $redColor;
-            }
-        }
-
-        span {
-            margin-left: 5px;
-        }
-    }
+  }
 }
 
 .search-container {
-    display: flex;
-    align-items: center;
-    width: 40%;
-    height: 48px;
-    border-radius: 25px;
-    background-color: $fontColor;
-    padding: 0 15px;
-    margin-left: auto; /* Aligns to the right side next to nav */
-    position: relative;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  height: 48px;
+  border-radius: 25px;
+  background-color: $fontColor;
+  padding: 0 15px;
+  margin-left: auto; /* Aligns to the right side next to nav */
+  position: relative;
 
-    .bi-search {
-        position: absolute;
-        left: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #888;
-        font-size: 20px;
+  .bi-search {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 20px;
+  }
+
+  .search {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding-left: 40px; /* Padding for the icon */
+    font-size: 16px;
+    color: #333;
+    outline: none;
+
+    &::placeholder {
+      color: #888;
     }
-
-    .search {
-        width: 100%;
-        border: none;
-        background-color: transparent;
-        padding-left: 40px; /* Padding for the icon */
-        font-size: 16px;
-        color: #333;
-        outline: none;
-
-        &::placeholder {
-            color: #888;
-        }
-    }
+  }
 }
 
 .icons {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
 
-    i {
-        font-size: 24px;
-        color: $blackColor;
-        margin-right: 10px;
-        cursor: pointer;
+  i {
+    font-size: 24px;
+    color: $blackColor;
+    margin-right: 10px;
+    cursor: pointer;
 
-        &:hover {
-            color: $redColor;
-        }
+    &:hover {
+      color: $redColor;
     }
+  }
 }
-
 
 .main-div {
-    position: relative;
-    max-width: 100%;
-    background-image: url(./photoes/Rectangle2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 883px;
-    padding-top: 134px;
-
+  position: relative;
+  max-width: 100%;
+  background-image: url(./photoes/Rectangle2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 883px;
+  padding-top: 134px;
 }
-.container{
-    display: flex;
-    // justify-content: left;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 850px;
-    height: 700px;
-    padding-left: 100px;
+.container {
+  display: flex;
+  // justify-content: left;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 850px;
+  height: 700px;
+  padding-left: 100px;
 }
-h1{
-    font-family: "Integral CF", sans-serif;
-        font-weight: 700;
-        color: $blackColor;
-        line-height: 64px;
-        font-size: 64px;
-    
+h1 {
+  font-family: "Integral CF", sans-serif;
+  font-weight: 700;
+  color: $blackColor;
+  line-height: 64px;
+  font-size: 64px;
 }
-.container p{
-    // margin-top: 30px;
-    font-family: "Satoshi", sans-serif;
-        font-weight: 400;
-        color: $blackColor;
-        line-height: 22px;
-        font-size: 16px;
+.container p {
+  // margin-top: 30px;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  color: $blackColor;
+  line-height: 22px;
+  font-size: 16px;
 }
 
-.button{
-    width: 210px;
-    height: 52px;
-    background-color: $blackColor;
-    border-radius: 62px;
-    color: $fontColor;
+.button {
+  width: 210px;
+  height: 52px;
+  background-color: $blackColor;
+  border-radius: 62px;
+  color: $fontColor;
 }
-.numbers1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 596px;
-    height: 74px;
+.numbers1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 596px;
+  height: 74px;
 }
 
-.box{
-    display: flex;
-    justify-content: left;
-    justify-content: space-around;
-    flex-direction: column;
+.box {
+  display: flex;
+  justify-content: left;
+  justify-content: space-around;
+  flex-direction: column;
 }
-.box p{
-    font-family: "Satoshi", sans-serif;
-        font-weight: 400;
-        color: $blackColor;
-        line-height: 14px;
-        font-size: 16px;
-        line-height: 22px;
+.box p {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  color: $blackColor;
+  line-height: 14px;
+  font-size: 16px;
+  line-height: 22px;
 }
-.num{
-    font-family: "Satoshi", sans-serif;
-        font-weight: 700 !important;
-        color: $blackColor;
-        line-height: 54px !important;
-        font-size: 40px !important;
+.num {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700 !important;
+  color: $blackColor;
+  line-height: 54px !important;
+  font-size: 40px !important;
 }
 .child-div {
-    position: absolute;
-    width: 400px; // Width of your vector image
-    height: 200px; // Height of your vector image
+  position: absolute;
+  width: 400px; // Width of your vector image
+  height: 200px; // Height of your vector image
 
-    // Positioning the first vector image
-    &.vector-1 {
-        width: 104px;
-        height: 104px;
-      top: 81px;
-      right: 86px;
-      background-image: url('./photoes/Vector.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-
-    // Positioning the second vector image
-    &.vector-2 {
-        width: 56px;
-        height: 56px;
-      bottom: 310px;
-      left: 850px;
-      background-image: url('./photoes/Vector1.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+  // Positioning the first vector image
+  &.vector-1 {
+    width: 104px;
+    height: 104px;
+    top: 81px;
+    right: 86px;
+    background-image: url("./photoes/Vector.png");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
-  .brands{
-    max-width: 100vw;
-    height: 122px;
-    display: flex;
-    background-color: $blackColor;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: center;
-  
-   &.img {
-padding-top: 2px;
-padding-bottom: 2px;
-   }
-
+  // Positioning the second vector image
+  &.vector-2 {
+    width: 56px;
+    height: 56px;
+    bottom: 310px;
+    left: 850px;
+    background-image: url("./photoes/Vector1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
+.brands {
+  max-width: 100vw;
+  height: 122px;
+  display: flex;
+  background-color: $blackColor;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  &.img {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
 
 .main-div2 {
-    max-width: 100%;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   margin-top: 68px;
-   margin-bottom: 64px;
-    h2 {
-      font-family: "Alfa Slab One", serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 48px;
-      line-height: 65.71px;
-      padding-top: 68px;
-      margin-bottom: 51px;
-    
-    }
+  max-width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 68px;
+  margin-bottom: 64px;
+  h2 {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 65.71px;
+    padding-top: 68px;
+    margin-bottom: 51px;
+  }
 
-    .shop {
-      width: 80%; 
-      height: 520px;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
+  .shop {
+    width: 80%;
+    height: 520px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     //   padding: 10px;
     padding-bottom: 36px;
-    }
+  }
 
-    .clothes {
-      width: 80%; 
-      height: 400px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-direction: column;
-      
+  .clothes {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
     //   padding: 20px;
-    }
+  }
 
-    .image-container {
-        
-        width: 295px;
-        height: 298px;
-        border-radius: 20px;
-        background-size: cover;
-        background-position: center;
-        // margin: -50px;
-        // margin-left: 1px;
-    }
+  .image-container {
+    width: 295px;
+    height: 298px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    // margin: -50px;
+    // margin-left: 1px;
+  }
 
-    .stars {
-        width: 150px;
-        height: 19px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        color: $starscolor;
-    }
-    .texts {
-        display: flex;
-        height: 90px;
-        flex-direction: column;
-        justify-content: space-between;
-        font-family: "Satoshi", sans-serif;
-        font-weight: 700;
-        color: $blackColor;
-        line-height: 27px;
-        font-size: 20px;
-    }
-    .stars span{
-        font-family: "Satoshi", sans-serif;
-        font-weight: 400 !important;
-        color: $blackColor;
-        line-height: 18.9px !important;
-        font-size: 14px !important;
-    }
+  .stars {
+    width: 150px;
+    height: 19px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $starscolor;
+  }
+  .texts {
+    display: flex;
+    height: 90px;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    color: $blackColor;
+    line-height: 27px;
+    font-size: 20px;
+  }
+  .stars span {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400 !important;
+    color: $blackColor;
+    line-height: 18.9px !important;
+    font-size: 14px !important;
+  }
 }
 .pricing {
-    display: flex;
-    align-items: center;
-  
-    .current-price {
-      font-family: 'Satoshi', sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 32.4px;
-      text-align: left;
-      margin-right: 10px;
-    }
-  
-    .old-price {
-      font-family: 'Satoshi', sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 32.4px;
-      text-align: left;
-      color: $blackColor;
-      opacity: 40%;
-      text-decoration: line-through;
-      margin-right: 10px;
-    }
-  
-    .discount {
-      background: rgba(255, 51, 51, 0.1);
-      padding: 5px 10px;
-      border-radius: 5px;
-      color: #FF3333;
-      font-family: 'Satoshi', sans-serif;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 16.2px;
-      text-align: center;
-      opacity: 90%;
-    }
-  
-    /* Hide old price and discount by default */
-    .no-discount {
-      .old-price,
-      .discount {
-        display: none;
-      }
-    }
-  }
-  .img {
-    background-image: url(./photoes/image1.png);
-  }
-  .img1 {
+  display: flex;
+  align-items: center;
 
-    background-image: url(./photoes/image2.png);
+  .current-price {
+    font-family: "Satoshi", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+    margin-right: 10px;
   }
-  .img2 {
-    background-image: url(./photoes/image3.png);
+
+  .old-price {
+    font-family: "Satoshi", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+    color: $blackColor;
+    opacity: 40%;
+    text-decoration: line-through;
+    margin-right: 10px;
   }
-  .img3 {
-    background-image: url(./photoes/image4.png);
+
+  .discount {
+    background: rgba(255, 51, 51, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ff3333;
+    font-family: "Satoshi", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16.2px;
+    text-align: center;
+    opacity: 90%;
   }
+
+  /* Hide old price and discount by default */
+  .no-discount {
+    .old-price,
+    .discount {
+      display: none;
+    }
+  }
+}
+.img {
+  background-image: url(./photoes/image1.png);
+}
+.img1 {
+  background-image: url(./photoes/image2.png);
+}
+.img2 {
+  background-image: url(./photoes/image3.png);
+}
+.img3 {
+  background-image: url(./photoes/image4.png);
+}
 
 //   view all button
 
 .btn {
-    width: 218px;
-    height: 52px;
-    border-radius: 62px;
-    border: 1px;
-    color: $blackColor;
-    opacity: 90%;
-    gap: 12px;
-    padding: 16px 54px 16px 54px;
-    margin-bottom: 64px;
+  width: 218px;
+  height: 52px;
+  border-radius: 62px;
+  border: 1px;
+  color: $blackColor;
+  opacity: 90%;
+  gap: 12px;
+  padding: 16px 54px 16px 54px;
+  margin-bottom: 64px;
 }
-
-
 
 // new arrivals  div
 .img11 {
-    background-image: url(./photoes/image11.png);
-  }
-  .img22 {
-
-    background-image: url(./photoes/image22.png);
-  }
-  .img33 {
-    background-image: url(./photoes/image33.png);
-  }
-  .img44 {
-    background-image: url(./photoes/image44.png);
-  }
-  .texts p {
-    text-transform: lowercase;
-  }
-  .texts p:first-letter{
-    text-transform: uppercase;
-  }
-
-
+  background-image: url(./photoes/image11.png);
+}
+.img22 {
+  background-image: url(./photoes/image22.png);
+}
+.img33 {
+  background-image: url(./photoes/image33.png);
+}
+.img44 {
+  background-image: url(./photoes/image44.png);
+}
+.texts p {
+  text-transform: lowercase;
+}
+.texts p:first-letter {
+  text-transform: uppercase;
+}
 
 //   grid  div  styles
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 289px); // Adjust height as needed
-    gap: 20px; // Adjust the gap between boxes
-    max-width: 1239px; // Set max-width to the total width of the grid
-    margin: 0 auto; // Center the grid container
-    padding: 20px; // Add padding if needed to avoid edge clipping
-  
-    .box1, .box2, .box3, .box4 {
-      background-color: #F0F0F0;
-      border-radius: 20px;
-      background-size: cover; // Ensure the background images cover the boxes
-      background-position: center;
-    }
-  
-    .box1 {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 1;
-      background-image: url('./photoes/grid1.png');
-    }
-  
-    .box2 {
-      grid-column: 2 / span 2;
-      grid-row: 1 / span 1;
-      background-image: url('./photoes/grid2.png');
-    }
-  
-    .box3 {
-      grid-column: 1 / span 2;
-      grid-row: 2 / span 1;
-      background-image: url('./photoes/grid3.png');
-    }
-  
-    .box4 {
-      grid-column: 3 / span 1;
-      grid-row: 2 / span 1;
-      background-image: url('./photoes/grid4.png');
-    }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 289px); // Adjust height as needed
+  gap: 20px; // Adjust the gap between boxes
+  width: 95%; // Set max-width to the total width of the grid
+  margin: 0 auto; // Center the grid container
+  padding: 20px; // Add padding if needed to avoid edge clipping
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    background-size: cover; // Ensure the background images cover the boxes
+    background-position: center;
   }
-  
-.box h4{
-font-family: 'Satoshi', sans-serif;
-font-size: 36px;
-font-weight: 700;
-line-height: 48.6px;
-text-align:inherit;
-justify-content: left;
 
-color: $blackColor;
-padding-left: 25px;
-padding-top: 36px;
+  .box1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    background-image: url("./photoes/grid1.png");
+  }
 
+  .box2 {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+    background-image: url("./photoes/grid2.png");
+  }
+
+  .box3 {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    background-image: url("./photoes/grid3.png");
+  }
+
+  .box4 {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    background-image: url("./photoes/grid4.png");
+  }
+}
+
+h4 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48.6px;
+  margin: 0;
+  place-items: start;
+  color: $blackColor;
+  margin-left: 25px;
+  margin-top: 36px !important;
+}
+.grid-div {
+display: flex;
+flex-direction: column;
+max-width: 1239px;
+height: 866px;
+border-radius: 40px;
+margin: 0 auto;
+background-color: $boxcolor; 
+h2 {
+  font-family: "integral cf", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0 auto;
+  font-size: 48px;
+  line-height: 57.6px;
+  padding-top: 70px;
+  padding-bottom: 64px;
+}
 }
