@@ -462,6 +462,7 @@ h4 {
   max-width: 1239px;
   height: 866px;
   border-radius: 40px;
+  margin-bottom: 80px;
   margin: 0 auto;
   background-color: #F0F0F0;
 }
@@ -474,4 +475,8 @@ h4 {
   line-height: 57.6px;
   padding-top: 70px;
   padding-bottom: 64px;
+}
+
+.bi-check-circle-fill {
+  color: #01AB31;
 }/*# sourceMappingURL=style.css.map */

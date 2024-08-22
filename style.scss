@@ -11,6 +11,8 @@ $fontColor: #ffffff;
 $starscolor: #ffc633;
 $redColor: #ff3333;
 $boxcolor: #F0F0F0;
+$feedback: #01AB31;
+
 
 
 body {
@@ -492,6 +494,7 @@ flex-direction: column;
 max-width: 1239px;
 height: 866px;
 border-radius: 40px;
+margin-bottom: 80px;
 margin: 0 auto;
 background-color: $boxcolor; 
 h2 {
@@ -504,4 +507,9 @@ h2 {
   padding-top: 70px;
   padding-bottom: 64px;
 }
+}
+
+// feedback div styles
+.bi-check-circle-fill {
+  color: $feedback;
 }
