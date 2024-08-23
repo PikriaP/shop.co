@@ -438,7 +438,7 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 289px); // Adjust height as needed
   gap: 20px; // Adjust the gap between boxes
-  width: 95%; // Set max-width to the total width of the grid
+  width: 100%; // Set max-width to the total width of the grid
   margin: 0 auto; // Center the grid container
   padding: 20px; // Add padding if needed to avoid edge clipping
 
@@ -494,7 +494,6 @@ flex-direction: column;
 max-width: 1239px;
 height: 866px;
 border-radius: 40px;
-margin-bottom: 80px;
 margin: 0 auto;
 background-color: $boxcolor; 
 h2 {
@@ -512,45 +511,70 @@ h2 {
 // feedback div styles
 .bi-check-circle-fill {
   color: $feedback;
-  padding-left: 0px;
+  margin-left: 0px;
 }
 .flex-row {
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  margin: 0 auto;
   .our {
   font-family: "Integral CF", sans-serif;
   font-weight: 700;
   color: $blackColor;
   line-height: 57.6px;
   font-size: 48px;
-font-weight: 700;
-text-align: left;
-  }
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 80px;
+  padding-bottom: 40px;
 }
-
+}
 .feedback-container{
-  max-width: 100%;
+  max-width: 90%;
   height: 300px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  // align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  margin: 0 auto;
+  gap: 20px;
+}
+  h5{
+  font-family: "Satoshi", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  place-items: start;
+  color: $blackColor;
+  }
+  p{
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  place-items: start;
+  color: rgba($blackColor, 0.6);
+  }
 
+  
+.border { 
+  width: 400px; 
+  height: 239.58px;
+  border: 1px solid rgba($blackColor, 0.1);
+  border-radius: 20px;
+ display: flex;
+ padding: 28px 32px;
 }
 
 .feedback-box {
- width: 400px; 
- height: 239.58px;
- border: 1px;
- border-color: $blackColor;
-//  opacity: 10%;
- border-radius: 20px;
+  width: 336px; 
+  height: 183.58px;
  display: flex;
  flex-direction: column;
- justify-content: space-around;
- 
+ justify-content: space-between; 
   .stars {
     width: 150px;
     height: 19px;
@@ -560,6 +584,94 @@ text-align: left;
     color: $starscolor;
   }
  }
+
+ .arrow {
+  width: 55px;
+  height: 25px;
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 1200px;
+  }
+// subscription div styles
+.subscribe {
+width: 1240px;
+height: 180px;
+display: flex;
+background-color: $blackColor;
+color: $fontColor;
+padding: 36px 64px 36px 64px;
+gap: 0px;
+border-radius: 20px;
+justify-content: space-between;
+opacity: 0px;
+margin: 0 auto;
+} h2{
+  font-family: "Integral CF", sans-serif;
+  font-weight: 700;
+  color: $fontColor;
+  line-height: 45px;
+  font-size: 40px;
+}
+.h2 {
+  width: 551px;
+  height: 94px;
+  gap: 0px;
+
+
+}
+.forms {
+  width: 349px;
+  height: 108px;
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.form-container {
+  width: 551px;
+  height: 94px;
+  gap: 0px;
+  opacity: 0px; // Not clear what this is for, if it's for the container
+}
+
+.input-group {
+  position: relative;
+  width: 173px;
+  height: 22px;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: Satoshi, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  color: #000; // Adjust color as needed
+}
+
+input[type="email"] {
+  width: 100%;
+  height: 100%;
+  padding-left: 30px; // Space for the icon
+  background-color: $fontColor; // Black with 60% opacity
+  border: 1px solid #000000; // Border color
+  border-radius: 40px; // Rounded corners
+  font-family: 'Satoshi', 'sans-serif';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  color: #000; // Text color
+
+  &::placeholder {
+    color: #00000099; // Placeholder color
+  }
+}
+
 
 
 
