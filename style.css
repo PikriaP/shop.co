@@ -479,4 +479,49 @@ h4 {
 
 .bi-check-circle-fill {
   color: #01AB31;
+  padding-left: 0px;
+}
+
+.flex-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.flex-row .our {
+  font-family: "Integral CF", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 57.6px;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.feedback-container {
+  max-width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feedback-box {
+  width: 400px;
+  height: 239.58px;
+  border: 1px;
+  border-color: #000000;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.feedback-box .stars {
+  width: 150px;
+  height: 19px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #ffc633;
 }/*# sourceMappingURL=style.css.map */
