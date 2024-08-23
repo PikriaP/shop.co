@@ -10,10 +10,8 @@ $blackColor: #000000;
 $fontColor: #ffffff;
 $starscolor: #ffc633;
 $redColor: #ff3333;
-$boxcolor: #F0F0F0;
-$feedback: #01AB31;
-
-
+$boxcolor: #f0f0f0;
+$feedback: #01ab31;
 
 body {
   font-family: "Satoshi", sans-serif;
@@ -489,23 +487,23 @@ h4 {
   margin-top: 36px !important;
 }
 .grid-div {
-display: flex;
-flex-direction: column;
-max-width: 1239px;
-height: 866px;
-border-radius: 40px;
-margin: 0 auto;
-background-color: $boxcolor; 
-h2 {
-  font-family: "integral cf", serif;
-  font-weight: 700;
-  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  max-width: 1239px;
+  height: 866px;
+  border-radius: 40px;
   margin: 0 auto;
-  font-size: 48px;
-  line-height: 57.6px;
-  padding-top: 70px;
-  padding-bottom: 64px;
-}
+  background-color: $boxcolor;
+  h2 {
+    font-family: "integral cf", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0 auto;
+    font-size: 48px;
+    line-height: 57.6px;
+    padding-top: 70px;
+    padding-bottom: 64px;
+  }
 }
 
 // feedback div styles
@@ -520,18 +518,18 @@ h2 {
   flex-direction: column;
   margin: 0 auto;
   .our {
-  font-family: "Integral CF", sans-serif;
-  font-weight: 700;
-  color: $blackColor;
-  line-height: 57.6px;
-  font-size: 48px;
-  text-align: left;
-  margin-left: 100px;
-  margin-top: 80px;
-  padding-bottom: 40px;
+    font-family: "Integral CF", sans-serif;
+    font-weight: 700;
+    color: $blackColor;
+    line-height: 57.6px;
+    font-size: 48px;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 80px;
+    padding-bottom: 40px;
+  }
 }
-}
-.feedback-container{
+.feedback-container {
   max-width: 90%;
   height: 300px;
   display: flex;
@@ -542,39 +540,38 @@ h2 {
   margin: 0 auto;
   gap: 20px;
 }
-  h5{
+h5 {
   font-family: "Satoshi", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 22px;
   place-items: start;
   color: $blackColor;
-  }
-  p{
+}
+p {
   font-family: "Satoshi", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   place-items: start;
   color: rgba($blackColor, 0.6);
-  }
+}
 
-  
-.border { 
-  width: 400px; 
+.border {
+  width: 400px;
   height: 239.58px;
   border: 1px solid rgba($blackColor, 0.1);
   border-radius: 20px;
- display: flex;
- padding: 28px 32px;
+  display: flex;
+  padding: 28px 32px;
 }
 
 .feedback-box {
-  width: 336px; 
+  width: 336px;
   height: 183.58px;
- display: flex;
- flex-direction: column;
- justify-content: space-between; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .stars {
     width: 150px;
     height: 19px;
@@ -583,30 +580,32 @@ h2 {
     align-items: center;
     color: $starscolor;
   }
- }
+}
 
- .arrow {
+.arrow {
   width: 55px;
   height: 25px;
   gap: 16px;
   display: flex;
   flex-direction: row;
   margin-left: 1200px;
-  }
+}
 // subscription div styles
 .subscribe {
-width: 1240px;
-height: 180px;
-display: flex;
-background-color: $blackColor;
-color: $fontColor;
-padding: 36px 64px 36px 64px;
-gap: 0px;
-border-radius: 20px;
-justify-content: space-between;
-opacity: 0px;
-margin: 0 auto;
-} h2{
+  width: 1240px;
+  height: 180px;
+  display: flex;
+  background-color: $blackColor;
+  color: $fontColor;
+  padding: 36px 64px 36px 64px;
+  gap: 0px;
+  border-radius: 20px;
+  justify-content: space-between;
+  opacity: 0px;
+  margin: 0 auto;
+  z-index: 10;
+}
+h2 {
   font-family: "Integral CF", sans-serif;
   font-weight: 700;
   color: $fontColor;
@@ -617,8 +616,6 @@ margin: 0 auto;
   width: 551px;
   height: 94px;
   gap: 0px;
-
-
 }
 .forms {
   width: 349px;
@@ -626,52 +623,73 @@ margin: 0 auto;
   gap: 14px;
   display: flex;
   flex-direction: column;
-  
 }
 .form-container {
-  width: 551px;
-  height: 94px;
+  width: 349px;
+  height: 48px;
   gap: 0px;
-  opacity: 0px; // Not clear what this is for, if it's for the container
+}
+form {
+  width: 100%;
+  height: 100%;
 }
 
 .input-group {
   position: relative;
-  width: 173px;
-  height: 22px;
+  width: 100%;
+  height: 100%;
 }
 
 .icon {
   position: absolute;
+  width: ;
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  font-family: Satoshi, sans-serif;
+  font-family: "Satoshi", "sans-serif";
   font-size: 16px;
   font-weight: 400;
   line-height: 21.6px;
-  color: #000; // Adjust color as needed
+  color: rgba($blackColor, 0.6);
 }
 
 input[type="email"] {
   width: 100%;
   height: 100%;
-  padding-left: 30px; // Space for the icon
+  padding-left: 40px; // Space for the icon
   background-color: $fontColor; // Black with 60% opacity
   border: 1px solid #000000; // Border color
-  border-radius: 40px; // Rounded corners
-  font-family: 'Satoshi', 'sans-serif';
+  border-radius: 40px;
+  font-family: "Satoshi", "sans-serif";
   font-size: 16px;
   font-weight: 400;
   line-height: 21.6px;
   text-align: left;
-  color: #000; // Text color
+  color: $blackColor;
 
   &::placeholder {
-    color: #00000099; // Placeholder color
+    color: #00000666;
+    padding-left: 12px;
   }
 }
 
+.btn2 {
+  width: 349px;
+  height: 46px;
+  border: 1px solid $blackColor;
+  border-radius: 62px;
+  padding: 12px, 16px, 12px, 16px;
+  gap: 12px;
+  background-color: $fontColor;
+  color: $blackColor;
+  font-family: "Satoshi", "sans-serif";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.6px;
+}
 
-
-
+// footer  styles
+.footer-cont {
+  max-width: 100vw;
+  height: ;
+}

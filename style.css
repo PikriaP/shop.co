@@ -600,16 +600,20 @@ h2 {
 }
 
 .form-container {
-  width: 551px;
-  height: 94px;
+  width: 349px;
+  height: 48px;
   gap: 0px;
-  opacity: 0px;
+}
+
+form {
+  width: 100%;
+  height: 100%;
 }
 
 .input-group {
   position: relative;
-  width: 173px;
-  height: 22px;
+  width: 100%;
+  height: 100%;
 }
 
 .icon {
@@ -617,11 +621,12 @@ h2 {
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  font-family: Satoshi, sans-serif;
+  font-family: "Satoshi", "sans-serif";
   font-size: 16px;
   font-weight: 400;
   line-height: 21.6px;
-  color: #000;
+  color: rgba(0, 0, 0, 0.6);
+  margin-right: 12px;
 }
 
 input[type=email] {
@@ -639,8 +644,22 @@ input[type=email] {
   color: #000;
 }
 input[type=email]::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 6, 0.4);
 }
 input[type=email]::placeholder {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 6, 0.4);
+}
+
+.btn2 {
+  width: 349px;
+  height: 46px;
+  border-radius: 62px;
+  padding: 12px, 16px, 12px, 16px;
+  gap: 12px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Satoshi", "sans-serif";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.6px;
 }/*# sourceMappingURL=style.css.map */
