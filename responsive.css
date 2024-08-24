@@ -1,0 +1,49 @@
+@media (max-width: 390px) {
+  .deal-div {
+    width: 390px;
+    height: 34px;
+    padding: 9px 0;
+    margin: 0 auto;
+    opacity: 1;
+  }
+  .deal-div i {
+    display: none;
+    margin-left: auto;
+  }
+  .deal-div p {
+    font-size: 12px;
+  }
+  .nav {
+    width: 390px;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 15px;
+  }
+  .nav .logo {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .nav .nav-ul {
+    display: none;
+  }
+  .nav .search-container {
+    display: none;
+  }
+  .nav .icons {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+  }
+  .nav .icons i {
+    font-size: 20px;
+  }
+  .nav .burger-bar {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    padding-right: 10px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

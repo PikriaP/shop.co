@@ -1,0 +1,73 @@
+// Mobile 390px
+// Variables
+$font-small: 12px;
+$font-medium: 14px;
+$font-large: 24px;
+$font-xlarge: 30px;
+$spacing-small: 8px;
+$spacing-medium: 10px;
+$spacing-large: 16px;
+
+
+// Mobile responsive styles
+@media (max-width: 390px) {
+    .deal-div {
+      width: 390px;
+      height: 34px;
+      padding: 9px 0; // Remove padding adjustments for mobile
+      margin: 0 auto;
+      opacity: 1; // Make it visible
+  
+      i {
+        display: none; // Ensure the close icon is visible
+        margin-left: auto; // Align it to the right
+      }
+  
+      p {
+        font-size: 12px; // Adjust font size if needed
+      }
+    }
+  
+    .nav {
+      width: 390px;
+      height: 64px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 20px 15px; // Add padding to the sides
+  
+      .logo {
+        font-size: 24px; // Adjust font size for mobile
+        margin-bottom: 8px;
+
+      }
+  
+      .nav-ul {
+        display: none; // Hide navigation items on mobile
+      }
+  
+      .search-container {
+        display: none; // Hide search box on mobile
+      }
+  
+      .icons {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+  
+        i {
+          font-size: 20px; // Adjust icon size if needed
+        }
+      }
+  
+      // Burger menu
+      .burger-bar {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        padding-right: 10px; // Adjust margins if needed
+      }
+    }
+  }
+  
