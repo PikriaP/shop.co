@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/satoshi");
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url(https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular);
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap");
 @font-face {
@@ -90,7 +91,7 @@ header {
       color: $blackColor;
       font-size: 16px;
       &:hover {
-        color: $redColor;
+        color: #888;
       }
     }
 
@@ -101,14 +102,12 @@ header {
 }
 
 .search-container {
-  display: flex;
-  align-items: center;
   width: 40%;
   height: 48px;
   border-radius: 25px;
-  background-color: $fontColor;
-  padding: 0 15px;
-  margin-left: auto; /* Aligns to the right side next to nav */
+  background-color: #F0F0F0;
+  padding: 15px;
+  margin-left: auto; 
   position: relative;
 
   .bi-search {
@@ -122,15 +121,19 @@ header {
 
   .search {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     background-color: transparent;
-    padding-left: 40px; /* Padding for the icon */
+    padding-left: 40px;
     font-size: 16px;
     color: #333;
     outline: none;
-
+  
     &::placeholder {
       color: #888;
+    
     }
   }
 }
@@ -151,33 +154,39 @@ header {
     }
   }
 }
+// end of header styles
 
+
+// main div styles
 .main-div {
   position: relative;
   max-width: 100%;
   background-image: url(./photoes/Rectangle2.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 883px;
+  background-size: contain ;
+  height: 663px;
   padding-top: 134px;
 }
 .container {
   display: flex;
-  // justify-content: left;
+  justify-content: left;
   flex-direction: column;
-  justify-content: space-evenly;
-  width: 850px;
-  height: 700px;
-  padding-left: 100px;
+  justify-content: space-between;
+  width: 620px;
+  height: 450px;
+  margin-left: 100px;
 }
 h1 {
-  font-family: "Integral CF", sans-serif;
-  font-weight: 700;
+  width: 600px;
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
   color: $blackColor;
-  line-height: 64px;
+  line-height: 60px;
   font-size: 64px;
 }
 .container p {
+  width: 545px;
+  height: 33px;
   // margin-top: 30px;
   font-family: "Satoshi", sans-serif;
   font-weight: 400;
@@ -202,30 +211,31 @@ h1 {
 }
 
 .box {
+  width: 141px;
+  height: 82px;
   display: flex;
   justify-content: left;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
 }
 .box p {
   font-family: "Satoshi", sans-serif;
   font-weight: 400;
-  color: $blackColor;
-  line-height: 14px;
-  font-size: 16px;
+  color: rgba($blackColor, 0.6);
   line-height: 22px;
+  font-size: 16px;
 }
 .num {
   font-family: "Satoshi", sans-serif;
   font-weight: 700 !important;
-  color: $blackColor;
+  color: $blackColor !important;
   line-height: 54px !important;
   font-size: 40px !important;
 }
 .child-div {
   position: absolute;
-  width: 400px; // Width of your vector image
-  height: 200px; // Height of your vector image
+  width: 400px;
+  height: 200px; 
 
   // Positioning the first vector image
   &.vector-1 {
@@ -242,8 +252,8 @@ h1 {
   &.vector-2 {
     width: 56px;
     height: 56px;
-    bottom: 310px;
-    left: 850px;
+    top: 297px;
+    left: 750px;
     background-image: url("./photoes/Vector1.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -258,6 +268,7 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-top: 0px;
 
   &.img {
     padding-top: 2px;
@@ -267,12 +278,11 @@ h1 {
 
 .main-div2 {
   max-width: 100%;
-  height: 600px;
+  height: 749px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 68px;
   margin-bottom: 64px;
   h2 {
     font-family: "Alfa Slab One", serif;
@@ -280,12 +290,12 @@ h1 {
     font-style: normal;
     font-size: 48px;
     line-height: 65.71px;
-    padding-top: 68px;
+    padding-top: 48px;
     margin-bottom: 51px;
   }
 
   .shop {
-    width: 80%;
+    width: 95%;
     height: 520px;
     display: flex;
     justify-content: space-between;
@@ -295,7 +305,7 @@ h1 {
   }
 
   .clothes {
-    width: 80%;
+    width: 90%;
     height: 400px;
     display: flex;
     justify-content: space-around;
@@ -612,7 +622,7 @@ p {
   z-index: 100;
   position: relative;
 }
-h2 {
+.subscribe h2 {
   font-family: "Integral CF", sans-serif;
   font-weight: 700;
   color: $fontColor;
@@ -770,6 +780,7 @@ input[type="email"] {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .footer-nav-ul {
@@ -784,7 +795,8 @@ input[type="email"] {
 width: 1240px;
 height: 1px;
 background-color: rgba($blackColor, 0.1);
-margin-top: 50px;
+-top: 50px;
+margin-bottom: 20px;
 margin: 0 auto;
 }
 .end-div{
@@ -814,4 +826,19 @@ margin: 0 auto;
   background-color: $fontColor;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
+// .pay {
+//   background-image: url(./photoes/visa.png);
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   display: flex;
+//   margin: 0 auto;
+//   padding-left: 5px;
+// width: 32.54px;
+// height: 10.51px;
+// .payment:nth-child(2) {
+// background-image: url(./photoes/Mastercard.png); 
+// background-repeat: no-repeat;
+// background-size: contain;
+// }

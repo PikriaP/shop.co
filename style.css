@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/satoshi");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 @import url(https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular);
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap");
 @font-face {
@@ -76,21 +77,19 @@ header {
   font-size: 16px;
 }
 .nav .nav-li a:hover {
-  color: #ff3333;
+  color: #888;
 }
 .nav .nav-li span {
   margin-left: 5px;
 }
 
 .search-container {
-  display: flex;
-  align-items: center;
   width: 40%;
   height: 48px;
   border-radius: 25px;
-  background-color: #ffffff;
-  padding: 0 15px;
-  margin-left: auto; /* Aligns to the right side next to nav */
+  background-color: #F0F0F0;
+  padding: 15px;
+  margin-left: auto;
   position: relative;
 }
 .search-container .bi-search {
@@ -103,9 +102,12 @@ header {
 }
 .search-container .search {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   background-color: transparent;
-  padding-left: 40px; /* Padding for the icon */
+  padding-left: 40px;
   font-size: 16px;
   color: #333;
   outline: none;
@@ -137,29 +139,33 @@ header {
   max-width: 100%;
   background-image: url(./photoes/Rectangle2.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 883px;
+  background-size: contain;
+  height: 663px;
   padding-top: 134px;
 }
 
 .container {
   display: flex;
+  justify-content: left;
   flex-direction: column;
-  justify-content: space-evenly;
-  width: 850px;
-  height: 700px;
-  padding-left: 100px;
+  justify-content: space-between;
+  width: 620px;
+  height: 450px;
+  margin-left: 100px;
 }
 
 h1 {
-  font-family: "Integral CF", sans-serif;
-  font-weight: 700;
+  width: 600px;
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
   color: #000000;
-  line-height: 64px;
+  line-height: 60px;
   font-size: 64px;
 }
 
 .container p {
+  width: 545px;
+  height: 33px;
   font-family: "Satoshi", sans-serif;
   font-weight: 400;
   color: #000000;
@@ -184,25 +190,26 @@ h1 {
 }
 
 .box {
+  width: 141px;
+  height: 82px;
   display: flex;
   justify-content: left;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
 }
 
 .box p {
   font-family: "Satoshi", sans-serif;
   font-weight: 400;
-  color: #000000;
-  line-height: 14px;
-  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
   line-height: 22px;
+  font-size: 16px;
 }
 
 .num {
   font-family: "Satoshi", sans-serif;
   font-weight: 700 !important;
-  color: #000000;
+  color: #000000 !important;
   line-height: 54px !important;
   font-size: 40px !important;
 }
@@ -224,8 +231,8 @@ h1 {
 .child-div.vector-2 {
   width: 56px;
   height: 56px;
-  bottom: 310px;
-  left: 850px;
+  top: 297px;
+  left: 750px;
   background-image: url("./photoes/Vector1.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -239,6 +246,7 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-top: 0px;
 }
 .brands.img {
   padding-top: 2px;
@@ -247,12 +255,11 @@ h1 {
 
 .main-div2 {
   max-width: 100%;
-  height: 600px;
+  height: 749px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 68px;
   margin-bottom: 64px;
 }
 .main-div2 h2 {
@@ -261,11 +268,11 @@ h1 {
   font-style: normal;
   font-size: 48px;
   line-height: 65.71px;
-  padding-top: 68px;
+  padding-top: 48px;
   margin-bottom: 51px;
 }
 .main-div2 .shop {
-  width: 80%;
+  width: 95%;
   height: 520px;
   display: flex;
   justify-content: space-between;
@@ -273,7 +280,7 @@ h1 {
   padding-bottom: 36px;
 }
 .main-div2 .clothes {
-  width: 80%;
+  width: 90%;
   height: 400px;
   display: flex;
   justify-content: space-around;
@@ -582,7 +589,7 @@ p {
   position: relative;
 }
 
-h2 {
+.subscribe h2 {
   font-family: "Integral CF", sans-serif;
   font-weight: 700;
   color: #ffffff;
@@ -743,6 +750,7 @@ input[type=email]::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .footer-nav-ul {
@@ -757,7 +765,8 @@ input[type=email]::placeholder {
   width: 1240px;
   height: 1px;
   background-color: rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
+  -top: 50px;
+  margin-bottom: 20px;
   margin: 0 auto;
 }
 
@@ -790,4 +799,5 @@ input[type=email]::placeholder {
   background-color: #ffffff;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
