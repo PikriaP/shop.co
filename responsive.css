@@ -52,4 +52,9 @@
     cursor: pointer;
     padding-right: 10px;
   }
+}
+@media (max-width: 390px) {
+  .shop {
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=responsive.css.map */

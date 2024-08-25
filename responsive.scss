@@ -79,3 +79,10 @@ $spacing-large: 16px;
     }
   }
   
+@media (max-width:390px){
+    .shop {
+        flex-wrap: wrap;
+    }
+    
+    
+}
