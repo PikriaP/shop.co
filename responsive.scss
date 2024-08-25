@@ -10,6 +10,13 @@ $spacing-large: 16px;
 
 
 // Mobile responsive styles
+
+@media only screen and (max-width: 390px) {
+    .background {
+        background-size: contain; /* Or try other values like 100% 100% */
+        background-position: center;
+    }
+}
 @media (max-width: 390px) {
     .deal-div {
       width: 390px;
@@ -17,6 +24,7 @@ $spacing-large: 16px;
       padding: 9px 0; // Remove padding adjustments for mobile
       margin: 0 auto;
       opacity: 1; // Make it visible
+
   
       i {
         display: none; // Ensure the close icon is visible
@@ -57,7 +65,7 @@ $spacing-large: 16px;
         width: 80%;
   
         i {
-          font-size: 20px; // Adjust icon size if needed
+          font-size: 20px; 
         }
       }
   
@@ -66,7 +74,7 @@ $spacing-large: 16px;
         display: block;
         font-size: 24px;
         cursor: pointer;
-        padding-right: 10px; // Adjust margins if needed
+        padding-right: 10px; 
       }
     }
   }

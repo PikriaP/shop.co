@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
+  overflow-x: hidden;
 }
 
 header {
@@ -79,9 +80,15 @@ header {
 }
 .nav .nav-li a:hover {
   color: #888;
+  text-decoration-line: underline;
+  transition: ease-in-out 0.3s;
 }
 .nav .nav-li span {
   margin-left: 5px;
+}
+
+.burger-bar {
+  display: none;
 }
 
 .search-container {
@@ -180,6 +187,14 @@ h1 {
   background-color: #000000;
   border-radius: 62px;
   color: #ffffff;
+  cursor: pointer;
+}
+.button:hover {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #ffffff;
+  transition: ease-in 0.5s;
+  border-color: #ffffff;
+  font-weight: 600;
 }
 
 .numbers1 {
@@ -389,6 +404,14 @@ h1 {
   gap: 12px;
   padding: 16px 54px 16px 54px;
   margin-bottom: 64px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #000000;
+  transition: ease-in 0.5s;
+  border-color: #000000;
+  font-weight: 600;
 }
 
 .img11 {
@@ -678,6 +701,14 @@ input[type=email]::placeholder {
   font-size: 16px;
   font-weight: 500;
   line-height: 21.6px;
+  cursor: pointer;
+}
+.btn2:hover {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: ease-in 0.5s;
+  border-color: #ffffff;
+  font-weight: 600;
 }
 
 .footer-cont {

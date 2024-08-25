@@ -1,3 +1,9 @@
+@media only screen and (max-width: 390px) {
+  .background {
+    background-size: contain; /* Or try other values like 100% 100% */
+    background-position: center;
+  }
+}
 @media (max-width: 390px) {
   .deal-div {
     width: 390px;

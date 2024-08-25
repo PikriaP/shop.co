@@ -22,7 +22,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
+  overflow-x: hidden;
 }
+
 
 header {
   background-color: #fff;
@@ -93,6 +95,8 @@ header {
       font-size: 16px;
       &:hover {
         color: #888;
+        text-decoration-line: underline;
+        transition: ease-in-out 0.3s;
       }
     }
 
@@ -100,6 +104,9 @@ header {
       margin-left: 5px;
     }
   }
+}
+.burger-bar{
+  display: none;
 }
 
 .search-container {
@@ -202,6 +209,15 @@ h1 {
   background-color: $blackColor;
   border-radius: 62px;
   color: $fontColor;
+  cursor: pointer;
+  &:hover {
+    color: rgba($blackColor, 0.6);
+    background-color: $fontColor;
+    transition: ease-in 0.5s;
+    border-color: $fontColor;
+    font-weight: 600;
+  }
+
 }
 .numbers1 {
   display: flex;
@@ -424,6 +440,14 @@ h1 {
   gap: 12px;
   padding: 16px 54px 16px 54px;
   margin-bottom: 64px;
+  cursor: pointer;
+  &:hover {
+    color: rgba($fontColor, 0.6);
+    background-color: $blackColor;
+    transition: ease-in 0.5s;
+    border-color: $blackColor;
+    font-weight: 600;
+  }
 }
 
 // new arrivals  div
@@ -704,6 +728,14 @@ input[type="email"] {
   font-size: 16px;
   font-weight: 500;
   line-height: 21.6px;
+  cursor: pointer;
+  &:hover {
+    color: rgba($fontColor, 0.6);
+    background-color: rgba($blackColor, 0.6);
+    transition: ease-in 0.5s;
+    border-color: $fontColor;
+    font-weight: 600;
+  }
 }
 
 // footer  styles
